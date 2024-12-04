@@ -1,5 +1,5 @@
-const { GraphQLNonNull, GraphQLString } = require('graphql');
 const { GraphQLEmailAddress } = require('graphql-scalars');
+const { GraphQLNonNull, GraphQLString } = require('graphql');
 const UserType = require('../types/user.type');
 const userService = require('../../../services/user.service');
 

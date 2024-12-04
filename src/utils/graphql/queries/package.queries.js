@@ -1,4 +1,4 @@
-const { GraphQLList, GraphQLString } = require('graphql');
+const { GraphQLList } = require('graphql');
 const { GraphQLDate } = require('graphql-scalars');
 const PackageType = require('../types/package.type');
 const packageService = require('../../../services/package.service');

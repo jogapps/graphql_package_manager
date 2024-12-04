@@ -1,9 +1,8 @@
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const httpStatus = require('http-status');
 const User = require('../models/user');
-const {generateToken} = require("../utils/security/tokens.utils");
+const httpStatus = require('http-status');
 const ApiError = require("../utils/requests/ApiError");
+const {generateToken} = require("../utils/security/tokens.utils");
 
 const createUser = async ({ email, password, role }) => {
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -15,8 +14,7 @@ const loginUser = async (email, password) => {
     if (!user) throw new ApiError(httpStatus.HTTP_STATUS_UNAUTHORIZED, 'Invalid credentials');
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) throw new ApiError(httpStatus.HTTP_STATUS_UNAUTHORIZED, 'Invalid credentials');
-    return generateToken(user.id, user.role, email)
-    // jwt.sign({ id: user.id, role: user.role }, process.env.JWT_SECRET, { expiresIn: '1h' });
+    return generateToken(user.id, user.role, email);
 };
 
 module.exports = {

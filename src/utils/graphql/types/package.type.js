@@ -1,5 +1,5 @@
-const { GraphQLObjectType, GraphQLString, GraphQLFloat, GraphQLID } = require('graphql');
 const { GraphQLDate } = require('graphql-scalars');
+const { GraphQLObjectType, GraphQLString, GraphQLFloat, GraphQLID } = require('graphql');
 
 const PackageType = new GraphQLObjectType({
     name: 'Package',

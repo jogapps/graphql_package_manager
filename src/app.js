@@ -7,7 +7,6 @@ const authMiddleware = require("./middlewares/jwt.middleware");
 
 db();
 
-// import initialization
 const app = express();
 
 app.use(authMiddleware);

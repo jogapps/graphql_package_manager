@@ -1,7 +1,7 @@
-const { GraphQLSchema, GraphQLObjectType } = require('graphql');
 const userMutations = require('./mutations/user.mutations');
-const packageMutations = require('./mutations/package.mutations');
 const packageQueries = require('./queries/package.queries');
+const { GraphQLSchema, GraphQLObjectType } = require('graphql');
+const packageMutations = require('./mutations/package.mutations');
 
 const RootQuery = new GraphQLObjectType({
     name: 'RootQuery',

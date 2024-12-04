@@ -1,8 +1,8 @@
 const {ROLES} = require("../utils/text");
 const httpStatus = require("http-status");
 const Package = require('../models/package');
-const {validateAuth} = require("../middlewares/auth.middleware");
 const ApiError = require("../utils/requests/ApiError");
+const {validateAuth} = require("../middlewares/auth.middleware");
 
 const createPackage = async (data, req) => {
     validateAuth(req);
