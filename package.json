@@ -1,0 +1,31 @@
+{
+  "name": "node_graphql_mongo",
+  "version": "1.0.0",
+  "description": "A package manager with node_mongo_graphql",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "keywords": [
+    "package",
+    "manager",
+    "node",
+    "mongoose",
+    "graphql"
+  ],
+  "author": "Jemifor Godspower",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "graphql": "^16.9.0",
+    "graphql-scalars": "^1.24.0",
+    "http-status": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.3"
+  }
+}
