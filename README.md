@@ -65,7 +65,7 @@ Open a browser and navigate to:
 ## GraphQL Examples
 ### Create a User
 
-```json lines
+```
 mutation {
   createUser(input: {
     email: "test@example.com",
@@ -82,7 +82,7 @@ mutation {
 
 ### Log in a User
 
-```json lines
+```
 mutation {
   loginUser(email: "test@example.com", password: "123456") {
   token
@@ -97,7 +97,7 @@ mutation {
 
 ### Create a Package
 
-```json lines
+```
 mutation {
   createPackage(input: { name: "Basic Plan", description: "Simple package", price: 100, expirationDate: "2025-01-01" }) {
   id
