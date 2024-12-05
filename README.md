@@ -23,8 +23,8 @@ Before you start, ensure you have the following installed:
 1. Clone the Repository
 
 
-    git clone https://github.com/your-repo/package-management.git
-    cd package-management
+    git clone https://github.com/jogapps/graphql_package_manager
+    cd graphql_package_manager
 
 
 2. Install Dependencies
